@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    --red: rgb(254, 79, 79);
+    --menu: rgb(236, 229, 229);
+    --home:white;
+    --ads-color:rgba(203, 198, 198, 0.4);
+}
+header{
+    background-color: black;
+}
+.head .img {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.head .img img{
+    width: 100px;
+    height: 100px;
+}
+.conten-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--red);
+    cursor: pointer;
+}
+.conten-menu .menu {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+}
+.conten-menu .menu li{
+    padding: 10px;
+    list-style: none;
+}
+.conten-menu .menu li a{
+    text-decoration: none;
+    color: var(--menu);
+    font-size: 20px;
+    font-family: Koulen,Arial,Helvetica,sans-serif;
+}
+.conten-menu .menu li:first-child a{
+    color: var(--home);
+    font-size: 26px;
+    background-color: rgba(128, 126, 126, 0.221);
+    padding: 10px;
+}
+.conten-menu .menu li:hover a{
+    color: white;
+}
+.information{
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 1200px;
+    height: 540px;
+    /* background-color: blueviolet; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.information .con{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(84, 85, 86, 0.347);
+}
+.information .con .new-1{
+    width: 100%;
+    height: 50%;
+    /* background-color: brown; */
+    display: flex;
+}
+.information .con .new-1 .new-left{
+    width: 60%;
+    height: 100%;
+    /* background-color: rgba(97, 96, 99, 0.344); */
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+.new-left:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.955));
+    
+}
+.new-right:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.955));
+    
+}
+.information .con .new-1 .new-right{
+    width: 40%;
+    height: 100%;
+    /* background-color: blue; */
+    position: relative;
+    overflow: hidden;
+}
+
+.information .con .new-1 .new-left .img1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -1;
+    position: absolute;
+}
+
+.information .con .new-1 .new-right .img2{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+.information .ads{
+    width: 29%;
+    height: 100%;
+    /* background-color: gray; */
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+.information .ads .ads-top{
+    width: 100%;
+    height: 49%;
+    background-color: var(--ads-color);
+}
+.information .ads .image {
+
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+.information .ads .ads-bottom{
+    width: 100%;
+    height: 49%;
+    background-color: var(--ads-color);
+}
+.information .con .new-1 .new-left .title{
+    position: absolute;
+    top: 10px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    padding: 2px 7px;
+    background-color: rgb(0, 166, 255);
+    clip-path: polygon(0% 0, 70% 0, 100% 100%, 0% 100%);
+    font-size: 15px;
+}
+.information .con .new-1 .new-right .title{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    padding: 2px 7px;
+    height: 40px;
+    width: 80px;
+    clip-path: polygon(0% 0, 70% 0, 100% 100%, 0% 100%);
+    background-color: rgb(237, 49, 134);
+    font-size: 15px;
+}
+.information .con .new-1 .new-left .title1{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    width: 130px;
+    height: 30px;
+    padding: 2px 7px;
+    clip-path: polygon(0% 0, 70% 0, 100% 100%, 0% 100%);
+    background-color: rgb(49, 237, 58);
+    font-size: 15px;
+}
+.information .con .new-1 .new-right .title1{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    width: 130px;
+    height: 30px;
+    padding: 2px 7px;
+    clip-path: polygon(0% 0, 70% 0, 100% 100%, 0% 100%);
+    background-color: rgb(49, 237, 58);
+    font-size: 15px;
+}
+h3{
+    font-size: 17px;
+    color: rgb(241, 236, 236);
+    padding: 10px;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+}
+.information .con .new-1 .new-left:hover h3{
+    color: red;
+    
+}
+.information .con .new-1 .new-right:hover h3{
+    color: red;
+}
+p{
+    font-size: 12px;
+    color: rgb(241, 236, 236);
+    padding: 10px;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+}
+.date{
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    font-size: 15px;
+}
+.discription{
+    position: absolute;
+    bottom: 40px;
+    width: 100% ;
+    height: 150px;
+    overflow: hidden;
+    /* background-color: blue; */
+    cursor: pointer;
+}
+.txt{
+    width: 100%;
+    height: 70%;
+  
+    margin-top: 70px;
+    transition: all 0.5s linear;
+}
+
+  .new-left:hover > .discription-new > .discription > .txt {
+    margin-top: 0px;
+}
+.discription1{
+    position: absolute;
+    bottom: 40px;
+    width: 100% ;
+    height: 150px;
+    overflow: hidden;
+    /* background-color: blue; */
+    cursor: pointer;
+}
+.txt1{
+    width: 100%;
+    height: 70%;
+  
+    margin-top: 70px;
+    transition: all 0.5s linear;
+}
+.new-right:hover > .discription-new1 > .discription1 > .txt1 {
+    margin-top: -15px;
+}
+.information .con .new-1 .new-left:hover .img1 img{
+    color: gray;
+}
+
+/* video */
+.video {
+    width: 1200px;
+    height: 750px;
+    /* background-color: rgb(201, 192, 255); */
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.video .title{
+    /* background-color: red; */
+    border-bottom: 2px solid red;
+    height: 50px;
+}
+.video .title .clippy {
+    display: flex;
+    color: white;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding: 15px 20px;
+    width: 120px;
+    height: 70px;
+    background-color: red;
+    clip-path: polygon(0 0, 72% 0, 100% 100%, 0% 100%);
+}
+.video .title .clippy .fa-chevron-right{
+    padding: 5px 10px;
+}
+.video .new-conten {
+    position: absolute;
+    bottom: 0;
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 1px 1px 10px -5px black;
+}
+.video .new-conten .pic-all{
+    width: 100%;
+    height: 700px;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    flex-wrap: wrap;
+}
+.video .new-conten .pic-all .pic-1{
+    width:  33%;
+    height: 330px;
+    /* background-color: aqua; */
+    
+}
+.video .new-conten .pic-all .pic-2{
+    width: 33%;
+    height: 330px;
+    /* background-color: aqua; */
+}
+.video .new-conten .pic-all .pic-3{
+    width: 33%;
+    height: 330px;
+    /* background-color: aqua; */
+}
+.pic-all .text{
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    font-style:normal;
+}
+.new-conten .pic-all .image{
+    width: 100%;
+    height: 72%;
+    background-color: black;
+    position: relative;
+}
+.new-conten .pic-all .image img{
+    position: absolute;
+    top: 2px;
+    transition: 0.8s;
+
+}
+/* =============hover============== */
+.new-conten .pic-all .pic-1:hover > .image >img{
+    transform: scale(0.95);
+    transition: 0.8s;
+}
+.new-conten .pic-all .pic-2:hover > .image >img{
+    transform: scale(0.95);
+    transition: 0.8s;
+}
+.new-conten .pic-all .pic-3:hover > .image >img{
+    transform: scale(0.95);
+}
+/* ================smallnew-1================= */
+.new-conten .pic-all .smallnew-1{
+    width: 67%;
+    height: 330px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.new-conten .pic-all .smallnew-1 .img{
+   width: 23%;
+   height: 50%;
+   /* background-color: yellow;  */
+   overflow: hidden;
+}
+/* .new-conten .pic-all .smallnew-1 */
+ .img .photo{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+/* .new-conten .pic-all .smallnew-1 */
+ .img .photo img{
+    transition: 0.2s;
+}
+.photo .t{
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+    font-size: 12.1px;
+    color: black;
+}
+/* .smallnew-1 */
+ .img:hover > .photo > img {
+    transform: scale(0.95);
+}
+/* ================smallnew-2================== */
+.new-conten .pic-all .smallnew-2{
+    width: 30%;
+    height: 330px;
+    /* background-color: blue; */
+}
+/* ===============Entertainment========= */
+.Entertainment {
+    width: 1200px;
+    height: 430px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    position: relative;
+
+}
+.Entertainment .enter-top {
+   width: 100%;
+   height: 50px;
+    border-bottom: 2px solid red;
+}
+.Entertainment .enter-top .text{
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: red;
+    width: 100px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%);
+}
+.Entertainment .enter-conten{
+    width: 1200px;
+    height: 380px;
+    box-shadow: 1px 1px 10px -5px black;
+    background-color: white;
+    position: absolute;
+    position: relative;
+    bottom: 0;
+}
+.Entertainment .enter-conten .conten1 {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(255, 68, 99);
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    flex-wrap: wrap;
+}
+.Entertainment .enter-conten .conten1 .image{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    
+}
+.Entertainment .enter-conten .conten1 .image img{
+    padding-top: 3px;
+    transition: 0.3s;
+}
+.tx{
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: Battambang,Arial,Helvetica,sans-serif;
+}
+.Entertainment .enter-conten .conten1:hover > .image > img{
+    transform: scale(0.98);
+}
+.enter-conten .conten2{
+    width: 60%;
+    height: 90%;
+    /* background-color: blue; */
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.enter-conten .conten2 .img{
+    width: 24%;
+    height: 50%;
+    /* background-color: yellow; */
+    overflow: hidden;
+}
+.Entertainment .enter-top1 .text1 {
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: rgb(0, 191, 255);
+    width: 100px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%);
+}
+.Entertainment .enter-top1{
+    width: 100%;
+    height: 52px;
+     border-bottom:2px solid rgb(0, 191, 255);
+}
+.container-bottom {
+    margin-top: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.container-bottom .contain{
+    width: 1200px;
+    height: 80%;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-bottom .contain .left{
+    width: 30%;
+    height: 100%;
+    padding-right: 80px;
+    /* background-color: white; */
+}
+.container-bottom .contain .left .img{
+    width: 50%;
+    height: 20%;
+    /* background-color: red; */
+}
+.container-bottom .contain .left p{
+    color: rgb(172, 169, 169);
+    font-size: 15px;
+}
+.container-bottom .contain .left p:nth-child(1){
+    padding-top: 0px;
+}
+.container-bottom .contain .left p:nth-child(2){
+   padding-top: 10px;
+}
+.container-bottom .contain .left p:nth-child(3){
+    padding-top: 0px;
+}
+.container-bottom .contain .center .about{
+    color:rgb(172, 169, 169);
+    font-family: Koulen,Arial,Helvetica,sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.container-bottom .contain .center{
+    width: 40%;
+    height: 100%;
+    /* background-color: white; */
+}
+.container-bottom .contain .center p{
+    color:rgb(172, 169, 169) ;
+    font-size: 15px;
+
+}
+
+.center .logo{
+    width: 100%;
+    height: 50px;
+    /* background-color: pink; */
+    display: flex;
+}
+.center .logo .img{
+    width: 9%;
+    height: 85%;
+    padding: 0 5px;
+    /* border-radius: 50%; */
+    /* background-color: red;    */
+}
+.center .logo .img img{
+    border-radius: 50%;
+    
+}
+.container-bottom .contain .reight{
+    width: 30%;
+    height: 100%;
+    /* background-color: white; */
+    padding-left: 30px;
+}
+.container-bottom .contain .reight .meet{
+    color:rgb(172, 169, 169);
+    font-family: Koulen,Arial,Helvetica,sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.container-bottom .contain .reight .social {
+    display: flex;
+    
+}
+.fab{
+    font-size: 22px;
+    color: gray;
+    margin: 0 5px;
+}
+.relation p:nth-child(1){
+    margin-top: 30px;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    color: rgb(236, 233, 233);
+    padding-left: 0;
+}
+.relation .email{
+    font-size: 15px;
+    padding: 1px 0;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    color: rgb(236, 233, 233);
+    padding-left: 0;
+}
+:hover > .email{
+    color: red;
+}
+.relation p:nth-child(3){
+    padding-top: 0px;
+    font-size: 15px;
+    padding-left: 0px;
+}
+.text-play {
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: rgb(255, 68, 99);
+    width: 100px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%);
+}
+.text-technology {
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: rgb(14, 212, 195);
+    width: 120px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%);
+}
+.text-life{
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: #38C378;
+    width: 150px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%);
+}
+.text-sport{
+    padding-top: 15px;
+    color: white;
+    font-size: 15px;
+    font-family:Battambang,Arial,Helvetica,sans-serif ;
+    padding-left: 10px;
+    background-color: #F9A62B;
+    width: 80px;
+    height: 100%;
+    clip-path: polygon(0 16%, 75% 16%, 100% 100%, 0% 100%); 
+}
+.Entertainment .enter-top1 {
+    border-bottom: 2px solid rgb(255, 68, 99);
+}
+.Entertainment .enter-top2 {
+    border-bottom: 2px solid rgb(14, 212, 195);
+}
+.Entertainment .enter-top3 {
+    border-bottom: 2px solid #38C378;
+}
+.Entertainment .enter-top4 {
+    border-bottom: 2px solid #F9A62B;
+}
+.Entertainment .enter-conten .conten-tech {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(14, 212, 195);
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    flex-wrap: wrap;
+}
+.Entertainment .enter-conten .conten-tech .image{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Entertainment .enter-conten .conten-life{
+    width: 30%;
+    height: 300px;
+    background-color: #38C378;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    flex-wrap: wrap;
+}
+.Entertainment .enter-conten .conten-life .image{
+    background-color: black;
+}
+.Entertainment .enter-conten .conten-sport{
+    width: 30%;
+    height: 300px;
+    background-color: #F9A62B;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    flex-wrap: wrap;
+}
+.Entertainment .enter-conten .conten-sport .image{
+    background-color: black;
+}
+.conten-tech:hover > .image > img{
+    transform: scale(0.98);
+}
+.conten-tech .image img{
+    transition: 0.3s;
+}
+.conten-life:hover > .image > img{
+    transform: scale(0.98);
+}
+.conten-life .image img{
+    transition: 0.3s;
+}
+.conten-sport:hover > .image > img{
+    transform: scale(0.98);
+}
+.conten-sport .image img{
+    transition: 0.3s;
+}
